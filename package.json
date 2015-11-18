@@ -1,0 +1,34 @@
+{
+  "name": "Guess-A-Sketch",
+  "version": "1.0.0",
+  "description": "Final Project",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "pretest": "jshint ./src",
+    "test": "echo \"Tests Complete\""
+  },
+  "keywords": [
+    "Node",
+    "MVC",
+    "Redis",
+    "Login"
+  ],
+  "author": "Eric Fonseca",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "body-parser": "^1.9.1",
+    "compression": "^1.2.0",
+    "connect-redis": "^2.1.0",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.10.0",
+    "express-session": "^1.9.1",
+    "jade": "^1.7.0",
+    "mongoose": "^3.8.18",
+    "serve-favicon": "^2.1.6",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6"
+  }
+}

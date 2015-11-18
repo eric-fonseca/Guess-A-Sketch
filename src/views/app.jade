@@ -1,0 +1,49 @@
+extends ./base.jade
+block append style
+    link(rel="stylesheet", type="text/css", href="/assets/style.css")
+block body
+  #pageWrapper
+    section#makeItem
+      #logOutButton.navlink
+        a(href='/logout')
+          img#logOutIcon(src='/assets/img/logout.png')
+          | Log out
+    #instructions
+      h1#greeting Welcome!
+      h2 Sketch your word. Try to guess what other people are drawing.
+    #draw
+      #infoContainer(style='height: 60px')
+        h1#word.info Draw your word: N/A
+        h1#guess.info Write guesses:
+      canvas#canvas(width='800', height='600')
+        | Your browser doesn't support canvas
+      canvas#canvas2(width='400', height='600')
+        | Your browser doesn't support canvas
+    select
+      option(selected='selected' disabled='disabled') Select Pen Size
+      option(value='1') 1
+      option(value='3') 3
+      option(value='5') 5
+      option(value='10') 10
+      option(value='15') 15
+      option(value='30') 20
+      option(value='25') 25
+      option(value='50') 50
+      option(value='100') 100
+    #colorsGroup
+      .color(id='#D10000' style='background-color:#D10000')
+      .color(id='#FF6622' style='background-color:#FF6622')
+      .color(id='#FFDA21' style='background-color:#FFDA21')
+      .color(id='#33DD00' style='background-color:#33DD00')
+      .color(id='#1133CC' style='background-color:#1133CC')
+      .color(id='#220066' style='background-color:#220066')
+      .color(id='#330044' style='background-color:#330044')
+      .color(id='#000000' style='background-color:#000000')
+      .color(id='#808080' style='background-color:#808080')
+      .color(id='#FFFFFF' style='background-color:#FFFFFF')
+      
+block scripts
+        script(src="/socket.io/socket.io.js")
+        script(src="/assets/maker.js")
+        script(src="https://code.jquery.com/jquery-1.8.0.min.js")
+        

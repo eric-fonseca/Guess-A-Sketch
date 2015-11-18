@@ -1,0 +1,19 @@
+extends ./base.jade
+block append style
+    link(rel="stylesheet", type="text/css", href="/assets/style.css")
+block body
+  img#logo(src="/assets/img/logo.png", alt="logo")
+  section#login
+    form#loginForm(class="mainForm", name="loginForm", action="/login", method="POST")
+      label(for="username") Username: 
+      input#user(type="text", name="username", placeholder="username")
+      label(for="pass") Password: 
+      input#pass(type="password", name="pass", placeholder="password")
+      a#loginSubmit(class="formSubmit", href="#") Sign in
+  #signupLink
+    a(href="/signup") New user? Click here to sign up!
+  #missingInfoMessage
+    h3
+      span#errorMessage Wrong username or password
+block scripts
+    script(src="/assets/client.js")

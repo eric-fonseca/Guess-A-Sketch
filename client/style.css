@@ -1,0 +1,242 @@
+* {
+	font-family: myriad pro, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#pageWrapper {
+	background-image: url("/assets/img/background.jpg");
+	width: 100%;
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+  	overflow-x: hidden;
+}
+
+#logo {
+    width: 450px;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 65px;
+  	margin-bottom: 10px;
+  	padding-left: 15px;
+}
+
+#signupLink {
+	position: relative;
+  	text-align: center;
+  	font-size: 18px;
+  	margin-top: -178px;
+}
+
+#loginLink {
+	position: relative;
+  	text-align: center;
+  	font-size: 18px;
+  	margin-top: -148px;
+}
+
+.navlink {
+    padding: 5px;
+    padding-top: 12px;
+    padding-left: 20px;
+    color: white;
+    font-size: 1.3em;
+    float: left;
+}
+
+.navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.navlink a:hover {
+    background-color: #66bdff;
+}
+
+.mainForm {
+    height: 300px;
+    width: 350px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.mainForm label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.formSubmit {
+    transition: background-color 0.4s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    font-size: 1.2em;
+    width: 90px;
+    background-color: #55acee;
+    border-radius: 2px;
+    padding: 3px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+.formSubmit:link, .formSubmit:visited, .formSubmit:hover, .formSubmit:active {
+    color: white;
+}
+
+.formSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: #338acc;
+}
+
+#user, #pass, #pass2 {
+    text-align: center;
+    font-size: 1.1em;
+    width: 180px;
+    border-radius: 6px;
+}
+
+#user:focus, #pass:focus, #pass2:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px #55acee;
+}
+
+#titleText {
+	text-align: center;
+  	font-family: myriad pro, sans-serif;
+  	margin-top: 85px;
+  	margin-bottom: -75px;
+  	font-size: 34px;
+  	color: rgb(85, 172, 238);
+  	text-shadow: 1px 1px rgb(0, 78, 136);
+}
+
+#logOutIcon {
+	width: 21px;
+	float: left;
+}
+
+#logOutButton {
+  	background: rgb(85, 172, 238);
+  	border: 3px solid;
+  	border-radius: 17px;
+  	padding-left: 8px;
+  	padding-top: 7px;
+  	padding-bottom: 7px;
+  	margin-top: 6px;
+  	margin-right: 6px;
+  	position: absolute;
+  	right: 0;
+}
+
+#logOutButton:hover {
+  	background-color: #66bdff
+}
+
+#missingInfoMessage {
+	text-align: center;
+  	background-color: #DFF9FF;
+  	border: solid 2px rgb(106, 174, 186);
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	width: 23%;
+  	position: absolute;
+  	top: 0px;
+  	right: 37%;
+  	display: none;
+}
+
+#errorMessage {
+    font-size: 21px;
+  	color: rgb(99, 158, 168);
+  	font-family: sans-serif;
+}
+
+.color {
+	height: 50px;
+	width: 10%;
+	float: left;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.color:hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+#colorsGroup {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+select {
+	position: absolute;
+  	bottom: 49px;
+  	left: -5px;
+  	font-size: 24px;
+  	border: 0;
+  	color: white;
+  	background-color: rgb(110, 183, 239);
+  	outline: none;
+}
+
+select:hover {
+	background-color: rgb(149, 202, 242);
+}
+
+#instructions {
+	text-align: center;
+  	width: 29%;
+  	margin: 0px auto;
+  	color: white;
+  	border-radius: 22px;
+  	background-color: rgb(85, 172, 238);
+  	border: 3px solid white;
+  	margin-top: 10%;
+  	opacity: 0.8;
+  	position: absolute;
+  	left: 0px;
+  	right: 0px;
+}
+
+canvas {
+	border: 2px solid black;
+	margin: 20px;
+	background-color: white;
+}
+
+.info {
+	margin-left: 20px;
+  	margin-bottom: 0px;
+}
+
+#guess {
+	float: right;
+  	position: relative;
+  	right: 16%;
+}
+
+#word {
+	float: left;
+}
